@@ -12,7 +12,7 @@ export function About() {
         <section className="bg-[#FDF6ec] py-16">
             <div className="container mx-auto px-4">
 
-                <div className="grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     <div className="relative">
 
