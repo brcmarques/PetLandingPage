@@ -78,7 +78,7 @@ export function Testimonials(){
                                                 />
                                             </div>
 
-                                            <p className='text-gray-200'>{item.content}</p>
+                                            <p className='text-gray-200 select-none'>{item.content}</p>
 
                                             <div>
                                                 
