@@ -13,11 +13,14 @@ const brands = [
     { name: "Primier", logo: primier },
     { name: "Formula Natural", logo: natural },
     { name: "Whiskas", logo: whiskas },
+    { name: "Golden", logo: golden },
 ]
 
 export function Footer(){
     return (
-        <section className='bg-[#E84c3d] py-16 text-white'>
+        <section
+            data-aos="zoom-out-top"
+            className='bg-[#E84c3d] py-16 text-white'>
             <div className='container mx-auto px-4'>
 
                 <div className='border-b border-white/20 pb-8'>
@@ -48,7 +51,8 @@ export function Footer(){
                     <div>
                         <h3 className='text 2xl font-semibold mb-2'>Pet Shop Dev</h3>
                         <p className='mb-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                        <a href="#"
+                        <a target='_blank'
+                            href={`https://wa.me/5553991971031?text=Olá vim pelo site e gostaria de mais informacoes!`}
                            className='bg-green-500 px-4 py-2 rounded-md'
                         >
                             Contato via WhatsApp
@@ -61,8 +65,8 @@ export function Footer(){
                         <p>Rua X, centro, Arroio Grande | RS</p>
                     </div>
                     <div>
-                        <h3 className='text 2xl font-semibold mb-2'>Redes Sociais</h3>
-                        <div className='flex gap-4'>
+                        <h3 className=' text-center text 2xl font-semibold mb-2'>Redes Sociais</h3>
+                        <div className='flex gap-4 justify-center items-center'>
                             <a href="#" target='_blank'><FacebookLogo className='w-8 h-8'/></a>
                             <a href="#" target='_blank'><InstagramLogo className='w-8 h-8'/></a>
                             <a href="#" target='_blank'><YoutubeLogo className='w-8 h-8'/></a>

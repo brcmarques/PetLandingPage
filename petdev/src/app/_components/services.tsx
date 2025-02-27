@@ -60,7 +60,10 @@ export function Services(){
     }
 
     return(
-        <section className="bg-white py-16">
+        <section 
+            data-aos="zoom-out-top"
+            data-aos-delay="500"
+            className="bg-white py-16">
             <div className="container mx-auto px-4">
 
                 
@@ -89,7 +92,10 @@ export function Services(){
                                                 <span>{item.duration}</span>
                                             </div>
 
-                                            <a href="#" className='flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300'>
+                                            <a 
+                                                target='_blank'
+                                                href={`https://wa.me/5553991971031?text=Olá vim pelo site e gostaria de mais informacoes sobre ${item.title}!`} 
+                                                className='flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300'>
                                                 <WhatsappLogo className='w-5 h-5'/>
                                                 Entrar em Contato
                                             </a>

@@ -27,14 +27,21 @@ export function Hero(){
 
 
                     <div className='space-y-6'>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+                        <h1 
+                            data-aos="zoom-out-down"
+                            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
                             Seu pet merece cuidado, carinho e atencao especial.
                         </h1>
-                        <p className="lg:text-lg">
+                        <p 
+                            data-aos="zoom-out-right"
+                            className="lg:text-lg">
                             Oferecemos os melhores servicos para garantir o bem estar e a felicidade do seu amigo de quatro patas.
                         </p>
                             <a 
-                                href="#"
+                                data-aos="zoom-out-top"
+                                data-aos-delay="500"
+                                target='_blank'
+                                href={`https://wa.me/5553991971031?text=Olá vim pelo site e gostaria de mais informacoes!`}
                                 className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
                             >
                             <WhatsappLogo className='w-5 h-5'/>
@@ -46,8 +53,9 @@ export function Hero(){
                                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>de desconto na primeira compra.
                             </p>
                             <div className='flex mt-4'>
-                                <div className='w-32 hidden lg:block'>
+                                <div className='w-32 hidden lg:block' >
                                     <Image
+                                    
                                         src={catImg}
                                         alt='Foto do gato'
                                         quality={100}
